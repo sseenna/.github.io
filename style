@@ -1,0 +1,467 @@
+@charset "UTF-8";
+@import url("html5reset-1.6.1.css");
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:500');
+
+/* ↓レイアウト↓ */
+
+*{
+    line-height:150%;
+}
+
+body{
+    color:#555;
+    background-color:#fff;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Verdana, sans-serif;
+}
+
+.base{
+    margin:0 auto;
+    max-width:1000px;
+}
+
+.header{
+    padding:25px 15px;
+    margin:0px;
+    text-align:center;
+    background-color:#469697;
+    color:#fff;
+}
+
+.footer{
+    padding:10px;
+    text-align:center;
+}
+
+.work{
+    padding:10px;
+    margin:30px 0px 20px 0px;
+}
+
+.menu{
+    margin:0px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    font-family: 'Cormorant Garamond', serif;
+    background-color:#8bc8c9;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.colum{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    margin:15px 0px;
+}
+
+.box{
+    margin:0px;
+    padding:10px;
+}
+
+.text{
+    margin:5px 0px;
+    padding:20px;
+    line-height:180%;
+}
+
+img
+{
+	max-width:100% ;
+	height:auto ;
+}
+
+
+/* ↓タグ↓ */
+
+h1{
+    font-size:170%;
+    font-weight:normal;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1:before{
+    font-family:'Font Awesome 5 Free';
+    content:'\f5d1';
+    font-weight:bold;
+    margin:0px 10px 0px 0px;
+}
+
+h2{
+    font-size:70%;
+    font-weight:normal;
+    margin:30px;
+    text-align:center;
+}
+
+h3{
+    font-size:130%;
+    font-weight:normal;
+    text-align:center;
+    margin:20px 0px;
+    font-family: 'Cormorant Garamond', serif;
+    color:#222;
+}
+
+h4{
+    font-size:100%;
+    font-weight:normal;
+    margin:15px 0px;
+    padding:2px 5px;
+    border-width:0px 0px 0px 10px;
+    border-color:#7eb4f0;
+    border-style:double;
+}
+
+h5{
+    font-size:90%;
+    font-weight:normal;
+    margin:10px 0px;
+    padding:4px 0px;
+    color:#9f9f98;
+}
+
+h6{
+    font-size:80%;
+    font-weight:normal;
+    margin:10px 0px;
+    background-color:#8bc8c9;
+    color:#fff;
+    padding:3px;
+}
+
+p{
+    text-align:left;
+    padding:5px 0px;
+}
+
+em{
+   background: linear-gradient(transparent 60%, #fff799 60%);
+}
+
+strong{
+    background-color:#dae9fb;
+    font-weight:normal;
+    color:#222;
+}
+
+small{
+    font-size:70%;
+}
+
+big{
+    font-size:130%;
+}
+
+ins{
+   background: linear-gradient(transparent 80%, #7eb4f0 80%);
+}
+
+i{
+    font-style:italic;
+}
+
+a:link{
+    color:#114d92;
+    text-decoration:none;
+}
+
+a:visited{
+    color:#114d92;
+    text-decoration:none;
+}
+
+h1 a:link{
+    color:#fff;
+}
+
+h1 a:visited{
+    color:#fff;
+}
+
+a:hover{
+    background-color:#dae9fb;
+}
+
+blockquote{
+    position:relative;
+    padding:10px 10px 10px 50px;
+    box-sizing border-box;
+    background:#fbfaf5;
+    border-left:6px double #ccc;
+    margin:15px;
+    font-size:90%;
+}
+
+blockquote:before{
+    display:inline-block;
+    position:absolute;
+    top:15px;
+    left:15px;
+    vertical-align: middle;
+    content:'\00275e';
+    color:#ccc;
+    font-size:30px;
+}
+
+li{
+    padding:3px;
+    margin:0px 0px 0px 20px;
+}
+
+ul{
+    margin:5px 0px;
+}
+
+ol{
+    margin:10px 0px;
+}
+
+dl{
+    padding-left:3px;
+    margin:10px 0px;
+}
+
+dt{
+    padding-left:5px;
+}
+
+dd{
+    padding-left:10px;
+}
+
+address{
+    font-size:80%;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+cite{
+    font-size:smaller;
+}
+
+
+/* ↓classタグ↓ */
+
+.item2{
+    margin:5px;
+    padding:5px;
+    font-size:70%;
+    text-align:center;
+    width:28%;
+    border-width:1px;
+    border-style:solid;
+    border-color:#ccc;
+}
+
+.item3-1{
+    padding:5px;
+    font-size:90%;
+    text-align:center;
+    width:70%;
+    color:#fff;
+    background-color:#469697;
+}
+
+.item3-2{
+    padding:5px;
+    font-size:70%;
+    text-align:left;
+    width:130%;
+    border-width:1px;
+    border-style:solid;
+    border-color:#ccc;
+}
+
+.list1{
+    list-style:none;
+}
+
+.list1 li{
+    display: inline-block;
+}
+
+.list2{
+    list-style-type:upper-roman;
+}
+
+.hr1{
+    margin:5px 0px;
+    border-top: 1px #ccc;
+    border-bottom: 1px #fff;
+    border-style:solid;
+}
+
+.hr2{
+    margin:5px 0px;
+    border-top: 1px #aaa;
+    border-style:dashed;
+}
+
+.hr3{
+    margin:5px 0px;
+    height:50px;
+    border-width:0px;
+}
+
+.p1{
+    padding:5px;
+    margin:5px 0px;
+    font-size:90%;
+    background-color:#f9f9f9;
+}
+
+.p2{
+    border-style:double;
+    border-width:3px;
+    border-color:#ccc;
+    padding:3px;
+    margin:5px 0px;
+    font-size:90%;
+}
+
+.p3{
+    border-style:solid;
+    border-width:1px;
+    border-color:#ccc;
+    padding:5px;
+    margin:5px 0px;
+    font-size:90%;
+    border-radius:10px;
+}
+
+.dl1{
+    margin:20px 0px;
+
+}
+
+.dt1{
+    font-weight:normal;
+    margin:5px 5px 0px -15px;
+    font-family: 'Cormorant Garamond', serif;
+    color:#222;
+}
+
+.dd1{
+    font-size:80%;
+    border-style:solid;
+    border-width:0px 0px 1px 0px;
+    margin:0px;
+    border-color:#ddd;
+    padding:5px 10px;
+}
+
+.dt1span{
+    font-size:100%;
+    padding:3px 5px;
+    color:#7eb4f0;
+}
+
+.memo{
+    background-color:#fbfaf5;
+    font-size:80%;
+    padding:0px 10px;
+    height:150px;
+    overflow:auto;
+    margin:5px 10px;
+}
+
+.img1{
+    box-shadow:1px 1px 3px -1px #888;
+}
+
+.counter{
+    font-family:,Arial;
+}
+
+.pagetop{
+    position: fixed;
+    bottom: 10px;
+    right: 14px;
+}
+ 
+.pagetop a{
+    display: block;
+    text-decoration: none;
+}
+ 
+.pagetop:hover{
+    opacity: 0.7 ;
+}
+
+
+/*↓ディスプレイ580px以下用↓*/
+
+@media screen and (max-width:580px) 
+
+{
+    
+.base{
+    width:auto;
+    margin:-20px 5px;
+}
+
+.box{
+    margin:50px 0px 10px 0px;
+}
+
+.work{
+    float:none;
+    width:auto;
+    margin:0px;
+    padding:10px;
+}
+
+.text{
+    float:none;
+    width:auto;
+    margin:0px;
+    padding:10px;
+}
+
+.gallery{
+    flex-direction:column;
+    width:auto;
+    margin:0px;
+}
+
+.colum{
+    flex-direction:column;
+    width:auto;
+    margin:10px 0px;
+}
+
+.item2{
+    width:95%;
+}
+
+.item3-1{
+    width:95%;
+    padding:6px;
+}
+
+.item3-2{
+    width:95%;
+}
+
+h1{
+    font-size:150%;
+    margin-top:50px;
+}
+
+h2{
+    background-color:#8bc8c9;
+    margin:0px;
+    color:#fff;
+    padding:5px;
+}
+
+h4{
+    font-size:90%;
+}
+
+}
